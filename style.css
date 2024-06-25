@@ -41,28 +41,39 @@ h1 {
     width: 45%;
 }
 
-.kid-photo {
-    border-radius: 50%;
-    margin-bottom: 15px;
-}
-
-button {
-    background-color: #4ecdc4;
+.kid-button {
+    background: none;
     border: none;
-    color: white;
-    padding: 15px 32px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    margin: 10px 2px;
     cursor: pointer;
-    border-radius: 50px;
-    transition: background-color 0.3s ease;
+    transition: transform 0.3s ease;
 }
 
-button:hover {
-    background-color: #45b7aa;
+.kid-button:hover {
+    transform: scale(1.05);
+}
+
+.kid-button:active {
+    animation: bounce 0.3s ease;
+}
+
+@keyframes bounce {
+    0%, 100% { transform: scale(1); }
+    50% { transform: scale(0.9); }
+}
+
+.kid-photo {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+    object-fit: cover;
+}
+
+.kid-button span {
+    display: block;
+    margin-top: 10px;
+    font-family: 'Fredoka One', cursive;
+    color: #4ecdc4;
 }
 
 .lunch-choice {
