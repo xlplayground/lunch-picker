@@ -72,3 +72,9 @@ function pickLunch(child) {
         sideElement.style.animation = 'popIn 0.5s ease 0.2s';
     }, 10);
 }
+
+// Populate menu lists
+document.addEventListener('DOMContentLoaded', function() {
+    document.getElementById('entree-list').innerHTML = lunchOptions.entrees.map(item => `<li>${item}</li>`).join('');
+    document.getElementById('side-list').innerHTML = lunchOptions.sides.map(item => `<li>${item}</li>`).join('');
+});
