@@ -12,31 +12,28 @@
         <h1>Emmett & Milo's Lunch Picker</h1>
         <div class="lunch-options">
             <div id="emmett" class="kid-section">
-                <button onclick="pickLunch('emmett')" class="kid-button">
-                    <img src="emmetthome.png" alt="Emmett" class="kid-photo">
-                    <span>Pick for Emmett</span>
-                </button>
-                <p id="emmett-entree" class="lunch-choice"></p>
-                <p id="emmett-side" class="lunch-choice"></p>
+                <div class="kid-container">
+                    <button onclick="pickLunch('emmett')" class="kid-button">
+                        <img src="emmetthome.png" alt="Emmett" class="kid-photo">
+                        <span>Pick for Emmett</span>
+                    </button>
+                    <div class="lunch-choices">
+                        <p id="emmett-entree" class="lunch-choice"></p>
+                        <p id="emmett-side" class="lunch-choice"></p>
+                    </div>
+                </div>
             </div>
             <div id="milo" class="kid-section">
-                <button onclick="pickLunch('milo')" class="kid-button">
-                    <img src="milohome.png" alt="Milo" class="kid-photo">
-                    <span>Pick for Milo</span>
-                </button>
-                <p id="milo-entree" class="lunch-choice"></p>
-                <p id="milo-side" class="lunch-choice"></p>
-            </div>
-        </div>
-        <div class="menu">
-            <h3>Menu Options</h3>
-            <div class="menu-section">
-                <h4>Entrees:</h4>
-                <ul id="entree-list"></ul>
-            </div>
-            <div class="menu-section">
-                <h4>Sides:</h4>
-                <ul id="side-list"></ul>
+                <div class="kid-container">
+                    <button onclick="pickLunch('milo')" class="kid-button">
+                        <img src="milohome.png" alt="Milo" class="kid-photo">
+                        <span>Pick for Milo</span>
+                    </button>
+                    <div class="lunch-choices">
+                        <p id="milo-entree" class="lunch-choice"></p>
+                        <p id="milo-side" class="lunch-choice"></p>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
