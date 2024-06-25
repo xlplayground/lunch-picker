@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Emmett & Milo's Lunch Picker</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Emmett & Milo's Lunch Picker</h1>
+        <div class="lunch-options">
+            <div id="emmett">
+                <h2>Emmett's Lunch</h2>
+                <button onclick="pickLunch('emmett')">Pick for Emmett</button>
+                <p id="emmett-entree"></p>
+                <p id="emmett-side"></p>
+            </div>
+            <div id="milo">
+                <h2>Milo's Lunch</h2>
+                <button onclick="pickLunch('milo')">Pick for Milo</button>
+                <p id="milo-entree"></p>
+                <p id="milo-side"></p>
+            </div>
+        </div>
+        <div class="menu">
+            <h3>Menu Options</h3>
+            <div class="menu-section">
+                <h4>Entrees:</h4>
+                <ul id="entree-list"></ul>
+            </div>
+            <div class="menu-section">
+                <h4>Sides:</h4>
+                <ul id="side-list"></ul>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+    <script>
+        // Populate menu lists
+        document.getElementById('entree-list').innerHTML = lunchOptions.entrees.map(item => `<li>${item}</li>`).join('');
+        document.getElementById('side-list').innerHTML = lunchOptions.sides.map(item => `<li>${item}</li>`).join('');
+    </script>
+</body>
+</html>
