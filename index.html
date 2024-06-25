@@ -5,22 +5,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Emmett & Milo's Lunch Picker</title>
     <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
     <div class="container">
         <h1>Emmett & Milo's Lunch Picker</h1>
         <div class="lunch-options">
-            <div id="emmett">
+            <div id="emmett" class="kid-section">
+                <img src="https://via.placeholder.com/150" alt="Emmett" class="kid-photo">
                 <h2>Emmett's Lunch</h2>
                 <button onclick="pickLunch('emmett')">Pick for Emmett</button>
-                <p id="emmett-entree"></p>
-                <p id="emmett-side"></p>
+                <p id="emmett-entree" class="lunch-choice"></p>
+                <p id="emmett-side" class="lunch-choice"></p>
             </div>
-            <div id="milo">
+            <div id="milo" class="kid-section">
+                <img src="https://via.placeholder.com/150" alt="Milo" class="kid-photo">
                 <h2>Milo's Lunch</h2>
                 <button onclick="pickLunch('milo')">Pick for Milo</button>
-                <p id="milo-entree"></p>
-                <p id="milo-side"></p>
+                <p id="milo-entree" class="lunch-choice"></p>
+                <p id="milo-side" class="lunch-choice"></p>
             </div>
         </div>
         <div class="menu">
@@ -36,10 +39,5 @@
         </div>
     </div>
     <script src="script.js"></script>
-    <script>
-        // Populate menu lists
-        document.getElementById('entree-list').innerHTML = lunchOptions.entrees.map(item => `<li>${item}</li>`).join('');
-        document.getElementById('side-list').innerHTML = lunchOptions.sides.map(item => `<li>${item}</li>`).join('');
-    </script>
 </body>
 </html>
