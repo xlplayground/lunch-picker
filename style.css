@@ -1,8 +1,9 @@
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f0f0f0;
+    font-family: 'Roboto', sans-serif;
+    background-color: #f0f8ff;
     margin: 0;
     padding: 20px;
+    color: #333;
 }
 
 .container {
@@ -10,16 +11,20 @@ body {
     margin: 0 auto;
     background-color: white;
     padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.1);
 }
 
 h1, h2, h3, h4 {
+    font-family: 'Fredoka One', cursive;
     color: #4a4a4a;
 }
 
 h1 {
     text-align: center;
+    color: #ff6b6b;
+    font-size: 2.5em;
+    margin-bottom: 30px;
 }
 
 .lunch-options {
@@ -28,8 +33,21 @@ h1 {
     margin-top: 20px;
 }
 
+.kid-section {
+    text-align: center;
+    background-color: #e9ecef;
+    padding: 20px;
+    border-radius: 10px;
+    width: 45%;
+}
+
+.kid-photo {
+    border-radius: 50%;
+    margin-bottom: 15px;
+}
+
 button {
-    background-color: #4CAF50;
+    background-color: #4ecdc4;
     border: none;
     color: white;
     padding: 15px 32px;
@@ -37,18 +55,26 @@ button {
     text-decoration: none;
     display: inline-block;
     font-size: 16px;
-    margin: 4px 2px;
+    margin: 10px 2px;
     cursor: pointer;
-    border-radius: 5px;
+    border-radius: 50px;
+    transition: background-color 0.3s ease;
 }
 
 button:hover {
-    background-color: #45a049;
+    background-color: #45b7aa;
+}
+
+.lunch-choice {
+    background-color: #ffeaa7;
+    padding: 10px;
+    border-radius: 5px;
+    margin-top: 10px;
 }
 
 .menu {
-    margin-top: 30px;
-    border-top: 1px solid #ccc;
+    margin-top: 40px;
+    border-top: 2px dashed #ff6b6b;
     padding-top: 20px;
 }
 
@@ -63,4 +89,11 @@ ul {
 
 li {
     margin-bottom: 5px;
+    background-color: #e9ecef;
+    padding: 8px;
+    border-radius: 5px;
+}
+
+li:nth-child(odd) {
+    background-color: #f8f9fa;
 }
